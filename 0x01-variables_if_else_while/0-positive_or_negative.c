@@ -5,7 +5,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * main block
+ * main - main block
  * Description: Show a random number and print if it is
  * positive, negative or zero
  * Return: 0
