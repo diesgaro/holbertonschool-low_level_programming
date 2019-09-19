@@ -6,8 +6,8 @@
 /* betty style doc for function main goes there */
 /**
  * main - main block
- * Description: Get a random number and print the number
- * and if it is positive, negative, or zero
+ * Description: Get a random number and print the last digit
+ * and if it is greater or less that especific numbers
  * Return: 0
  */
 int main(void)
