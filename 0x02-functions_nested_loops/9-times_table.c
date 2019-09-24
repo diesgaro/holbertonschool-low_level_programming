@@ -14,10 +14,10 @@ void times_table(void)
 			prod = f0 * f1;
 			if (prod > 9)
 			{
-				_putchar ((prod / 10) + '0');
-				_putchar ((prod % 10) + '0');
+				_putchar (prod / 10 + '0');
+				_putchar (prod % 10 + '0');
 			}
-			else if (prod != 0)
+			else if (f1 != 0)
 			{
 				_putchar (' ');
 				_putchar (prod + '0');
@@ -27,14 +27,12 @@ void times_table(void)
 				_putchar (prod + '0');
 			}
 
-			if (f1 < 9)
+			if (f1 != 9)
 			{
 				_putchar (',');
 				_putchar (' ');
 			}
 		}
-
 		_putchar ('\n');
-
 	}
 }
