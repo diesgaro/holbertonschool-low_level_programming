@@ -12,7 +12,11 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
+		if (s[0] >= 97 && s[0] <= 122)
+			flag = 1;
+
 		x = 0;
+
 		while (sep[x] != '\0')
 		{
 			if (sep[x] == s[i])
