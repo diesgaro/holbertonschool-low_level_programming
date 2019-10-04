@@ -26,10 +26,13 @@ char *rot13(char *s)
 	while (s[i] != '\0')
 	{
 		x = 0;
-		while (x < 53)
+		while (x < 52)
 		{
 			if (s[i] == array[0][x])
+			{
 				s[i] = array[1][x];
+				break;
+			}
 			x++;
 		}
 		i++;
