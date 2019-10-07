@@ -1,12 +1,12 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _strpbrk - Function that searches a string for any of a set of bytes
- * @s: Pointer type char
- * @accept: Pointer type char
- * Return: A pointer s
+ * _strstr - Function that locates a substring
+ * @haystack: Pointer type char
+ * @needle: Pointer type char
+ * Return: A pointer haystack
  */
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
 	int i, x;
 
