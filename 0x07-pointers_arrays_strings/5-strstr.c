@@ -15,9 +15,7 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack != '\0')
 	{
-
 		str = haystack;
-
 		while (1)
 		{
 			if (*substr == '\0')
@@ -27,7 +25,6 @@ char *_strstr(char *haystack, char *needle)
 				break;
 		}
 		substr = needle;
-
 		haystack++;
 	}
 
