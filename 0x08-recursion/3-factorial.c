@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * factorial - Function that returns the factorial of a number
- * @s: Pointer type int
+ * @n: Pointer type int
  * Return: Factorial of a n
  */
 int factorial(int n)
