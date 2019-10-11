@@ -20,7 +20,7 @@ int _length(char *s)
 {
 	if (*s == '\0')
 		return (1);
-	else
+
 		return (_length(s + 1) + 1);
 }
 
