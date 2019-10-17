@@ -11,8 +11,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *a;
-	unsigned int i;
+	char *a;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -25,9 +24,29 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	else
 	{
-		for (i = 0; i < nmemb; i++)
-			a[i] = 0;
+		_memset(a, 0, (nmemb * size));
 
 		return (a);
 	}
+}
+
+/**
+ * _memset - Function that fills memory with a constant byte
+ * @s: Pointer type char
+ * @b: VAriable type char
+ * @n: Variable type int
+ * Return: A pointer s
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	int i = 0;
+
+	while (n > 0)
+	{
+		s[i] = b;
+		i++;
+		n--;
+	}
+
+	return (s);
 }
