@@ -1,0 +1,2 @@
+# holbertonschool-low_level_programming
+This repository contains te activities for te proyect holbertonschool-low_level_programming
