@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 
-	while (format[i] != '\0')
+	while (format != NULL && format[i] != '\0')
 	{
 		x = 0;
 		while (options[x].op != '\0')
