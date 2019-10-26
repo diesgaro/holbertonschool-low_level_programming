@@ -20,10 +20,9 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 
-	va_start(list, format);
-
 	while (format[i] != '\0')
 	{
+		va_start(list, format);
 		x = 0;
 		while (options[x].op != '\0')
 		{
