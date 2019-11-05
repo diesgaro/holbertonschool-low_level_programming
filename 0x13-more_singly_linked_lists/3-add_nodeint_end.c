@@ -3,7 +3,7 @@
  * add_nodeint_end - Function that adds a new node at the end of a list
  *
  * @head: Pointer to pointer type listint_t
- * @str: Pointer const type int
+ * @n: Pointer const type int
  *
  * Return: The address of the new element or NULL if it failed
  */
