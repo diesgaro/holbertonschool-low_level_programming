@@ -14,10 +14,11 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	comparate = n ^ m;
 
-	while (comparate != '\0')
+	while (comparate)
 	{
-		count++;
-		comparate = comparate & (comparate - 1);
+		if (comparate & 1)
+			count++;
+		comparate = comparate >> 1;
 	}
 
 	return (count);
