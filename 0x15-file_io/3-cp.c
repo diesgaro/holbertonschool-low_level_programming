@@ -22,7 +22,7 @@ int main(int ac, char *av[])
 	if (fd_from == -1)
 		dprintf(SE, "Error: Can't read from file %s\n", av[1]), exit(98);
 
-	fd_to = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, mod);
+	fd_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, mod);
 
 	if (fd_to == -1)
 		dprintf(SE, "Error: Can't write to %s\n", av[2]), exit(99);
