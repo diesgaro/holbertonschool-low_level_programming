@@ -40,12 +40,12 @@ int main(int ac, char *av[])
 	close_status = close(fd_from);
 
 	if (close_status == -1)
-		dprintf(SE, "Error: Can't close fd %d\n", close_status), exit(100);
+		dprintf(SE, "Error: Can't close fd %d\n", fd_from), exit(100);
 
 	close_status = close(fd_to);
 
 	if (close_status == -1)
-		dprintf(SE, "Error: Can't close fd %d\n", close_status), exit(100);
+		dprintf(SE, "Error: Can't close fd %d\n", fd_to), exit(100);
 
 	return (0);
 }
