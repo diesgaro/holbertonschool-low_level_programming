@@ -7,7 +7,7 @@
  *
  * Return: Always 0.
  */
-int main(int ac, char **av)
+int main(int ac, char *av[])
 {
 	int fd_from, fd_to, close_status;
 	char buffer[BUFFERSIZE];
