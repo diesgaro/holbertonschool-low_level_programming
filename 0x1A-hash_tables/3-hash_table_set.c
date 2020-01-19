@@ -7,7 +7,7 @@
  * @key: the key
  * @value: Value associated with the key
  *
- * Return: If success a pointer to the newly created hash table, else a NULL
+ * Return: 1 if it succeeded, 0 otherwise
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -42,7 +42,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		new_node->next = ht->array[index_key];
 
 	ht->array[index_key] = new_node;
-	free(new_node);
-	printf("%s\n", ht->array[index_key]->value);
 	return (1);
 }
