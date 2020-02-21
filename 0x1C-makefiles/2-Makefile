@@ -1,0 +1,16 @@
+CC = gcc
+SRC = main.c holberton.c
+OBJ = main.o holberton.o
+NAME = holberton
+
+# Generate the holberton executable
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# Generate the .o file of main.c
+main.o: main.c
+	$(CC) -c -o main.o main.c
+
+#Generate the .o file of holberton.c
+holberton.o: holberton.c
+	$(CC) -c -o holberton.o holberton.c
