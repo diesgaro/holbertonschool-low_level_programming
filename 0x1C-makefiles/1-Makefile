@@ -1,0 +1,6 @@
+CC = gcc
+SRC = main.c holberton.c
+
+# Generate the holberton executable
+all: $(SRC)
+	 $(CC) $(SRC) -o holberton
