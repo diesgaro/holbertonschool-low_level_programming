@@ -12,8 +12,11 @@ def island_perimeter(grid):
         for j in range(lenJ):
             if (grid[i][j] == 1):
                 """ UP """
-                if (grid[i-1][j] == 0):
+                if (i == 0):
                     count += 1
+                else:
+                    if (grid[i-1][j] == 0):
+                        count += 1
                 """ DOWN """
                 if (i+1 == lenI):
                     count += 1
@@ -22,8 +25,11 @@ def island_perimeter(grid):
                         count += 1
 
                 """ LEFT """
-                if (grid[i][j-1] == 0):
+                if (j == 0):
                     count += 1
+                else:
+                    if (grid[i][j-1] == 0):
+                        count += 1
                 """ RIGTH """
                 if (j+1 == lenJ):
                     count += 1
