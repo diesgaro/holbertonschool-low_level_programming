@@ -12,7 +12,7 @@ Write a function that searches for a value in an array of integers using the Lin
 * If value is not present in array or if array is NULL, your function must return -1
 * Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
 
-###1. Binary search
+### 1. Binary search
 Write a function that searches for a value in a sorted array of integers using the Binary search algorithm
 
 * Prototype : int binary_search(int *array, size_t size, int value);
